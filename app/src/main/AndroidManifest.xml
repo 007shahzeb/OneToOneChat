@@ -29,7 +29,7 @@
         android:theme="@style/AppTheme">
 
 
-        <activity android:name="android.com.locationUpdateHive.New">
+        <activity android:name="android.com.dexterRuntimePermission.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
