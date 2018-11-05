@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.com.onetoonechat">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- This permission is need to check the internet connection state !-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <!--New-->
+
+
+    <!-- Used to start logging after re-boot -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity android:name="android.com.locationUpdateHive.New">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name="android.com.firebaseLoginWith.LoginActivity" />
+        <activity android:name="android.com.firebaseLoginWith.ProfileActivity" />
+        <activity android:name="android.com.firebaseUserAllCases.LoginActivity" />
+        <activity android:name="android.com.firebaseUserAllCases.ResetPasswordActivity" />
+        <activity android:name="android.com.firebaseUserAllCases.SignupActivity" />
+        <activity android:name="android.com.googleLoginWithFirebase.ProfileActivity" />
+
+
+        <receiver
+            android:name="android.com.backgroundLocationUpdates.LocationLoggerServiceManager"
+            android:enabled="true"
+            android:exported="false"
+            android:label="LocationLoggerServiceManager">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="android.com.backgroundLocationUpdates.BackgroundLocationService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.wearable.BIND_LISTENER" />
+            </intent-filter>
+        </service>
+
+
+    </application>
+
+</manifest>

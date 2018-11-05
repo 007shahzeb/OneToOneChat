@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "801117106819",
+    "firebase_url": "https://authenticationwithfire.firebaseio.com",
+    "project_id": "authenticationwithfire",
+    "storage_bucket": "authenticationwithfire.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:801117106819:android:bfebffb75dde0632",
+        "android_client_info": {
+          "package_name": "android.com.onetoonechat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "801117106819-ug0dtcomsct8l80ddku31shndrcgclki.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmisxA9z7pjvvVCEtahVqUrN-AMSs5S4M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
